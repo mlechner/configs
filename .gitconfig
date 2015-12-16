@@ -1,0 +1,28 @@
+[user]
+	name = Marco Lechner, GeoBoink
+	email = marco@marcolechner.de
+[alias]
+    st = status
+    lg = log --graph --all --pretty=format:'%Cred%h%Creset - %C(bold red)%G? %C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --decorate
+    ld = log --graph --all --pretty=format:'%Cred%h%Creset - %C(bold red)%G? %C(yellow)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset' --abbrev-commit --date=iso --decorate
+    cv = commit -v
+    cvs = commit -v -SBE88770D
+    unstage = "reset HEAD "
+    au = add . -u
+    fa = fetch --all
+    rv = remote -v
+    ftech = ftech
+[color]
+    ui = auto
+[merge]
+    tool = meld
+[core]
+    editor = vim
+[push]
+    default = current
+[status]
+    showUntrackedFiles = all
+[diff]
+tool = meld
+[credential]
+	helper = cache

@@ -1,2 +1,35 @@
 [ui]
 username = Marco Lechner, GeoBoink<lechner@geoboink.de>
+email = lechner@geoboink.de
+
+[extensions]
+# uncomment these lines to enable some popular extensions
+# (see "hg help extensions" for more info)
+pager =
+progress =
+color =
+graphlog =
+#hgext.convert =
+#hgext.bookmarks =
+#hgext.strip =
+#hgext.rebase =
+
+[alias]
+lgg = log -G
+st = status
+sum = summary
+pv = paths -v
+in = incoming
+out = outgoing
+lg = log -G --template '\x1B[31m{node|short} | {branch} | \x1B[32m{date|isodatesec} | \x1B[33m{author|user}: \x1B[0m{desc|strip|firstline}\n'
+
+[pager]
+pager = LESS=FRSXQ less
+quiet = True
+attend = diff,status,log,qdiff,blame,annotate,pdiff,glog,lgg,lg
+
+[hostfingerprints]
+scm.wald.intevation.org = 3B:AD:99:29:43:44:D4:97:15:2E:FB:EE:1C:5A:7E:A1:C4:BE:07:C8
+svn-koala.bfs.de = 83:70:3F:F2:6A:06:22:B6:93:1F:25:3D:3E:24:DA:38:5F:48:47:26
+redmine-koala.bfs.de = 74:3C:4F:9C:B2:77:1B:11:5F:2E:FA:FD:AA:49:BD:1E:DC:CC:CA:72
+

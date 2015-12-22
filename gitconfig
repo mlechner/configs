@@ -1,6 +1,6 @@
 [user]
 	name = Marco Lechner, GeoBoink
-	email = marco@marcolechner.de
+	email = lechner@geoboink.de
 [alias]
     st = status
     lg = log --graph --all --pretty=format:'%Cred%h%Creset - %C(bold red)%G? %C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --decorate

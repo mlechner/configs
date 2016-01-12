@@ -1,10 +1,14 @@
 [user]
-	name = Marco Lechner, GeoBoink
-	email = lechner@geoboink.de
+    name = Marco Lechner, GeoBoink
+    email = lechner@geoboink.de
+    signingkey = 
+
 [alias]
     st = status
     lg = log --graph --all --pretty=format:'%Cred%h%Creset - %C(bold red)%G? %C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --decorate
-    ld = log --graph --all --pretty=format:'%Cred%h%Creset - %C(bold red)%G? %C(yellow)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset' --abbrev-commit --date=iso --decorate
+    lgd = log --graph --all --pretty=format:'%Cred%h%Creset - %C(bold red)%G? %C(yellow)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset' --abbrev-commit --date=iso --decorate
+    lgo = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --decorate
+    cm = commit -v
     cv = commit -v
     cvs = commit -v -SBE88770D
     unstage = "reset HEAD "
@@ -13,8 +17,12 @@
     rv = remote -v
     bv = branch -rav
     ftech = ftech
+    co = checkout
+    clear = !clear
 [color]
     ui = auto
+    branch = always
+    status = auto
 [merge]
     tool = meld
 [core]
@@ -24,6 +32,8 @@
 [status]
     showUntrackedFiles = all
 [diff]
-tool = meld
+    tool = meld
 [credential]
-	helper = cache
+    helper = cache
+[mergetool]
+    keepBackup = false

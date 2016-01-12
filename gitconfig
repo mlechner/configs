@@ -16,7 +16,7 @@
     fa = fetch --all
     rv = remote -v
     bv = branch -rav
-    ftech = ftech
+    ftech = fetch
     co = checkout
     clear = !clear
 [color]

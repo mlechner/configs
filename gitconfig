@@ -11,6 +11,7 @@
     au = add . -u
     fa = fetch --all
     rv = remote -v
+    bv = branch -rav
     ftech = ftech
 [color]
     ui = auto

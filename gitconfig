@@ -15,10 +15,12 @@
     au = add . -u
     fa = fetch --all
     rv = remote -v
-    bv = branch -rav
+    bv = branch -ravv
     ftech = fetch
     co = checkout
     clear = !clear
+    subsync = submodule sync
+    subdate = submodule update --init --recursive
 [color]
     ui = auto
     branch = always

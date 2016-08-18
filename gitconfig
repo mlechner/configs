@@ -21,6 +21,7 @@
     clear = !clear
     subsync = submodule sync
     subdate = submodule update --init --recursive
+    ccc = credential-cache exit
 [color]
     ui = auto
     branch = always

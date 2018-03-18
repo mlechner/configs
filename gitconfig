@@ -1,10 +1,11 @@
 [user]
     name = Marco Lechner, GeoBoink
     email = lechner@geoboink.de
-    signingkey = 
+    signingkey =
 
 [alias]
     st = status
+    stu = status -uno
     lg = log --graph --all --pretty=format:'%Cred%h%Creset - %C(bold red)%G? %C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --decorate
     lgd = log --graph --all --pretty=format:'%Cred%h%Creset - %C(bold red)%G? %C(yellow)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset' --abbrev-commit --date=iso --decorate
     lgo = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --decorate
@@ -15,10 +16,16 @@
     au = add . -u
     fa = fetch --all
     rv = remote -v
-    bv = branch -rav
+    bv = branch -ravv
+    bc = branch -r --contains
+    bcv = branch -ravv --contains
     ftech = fetch
     co = checkout
     clear = !clear
+    subsync = submodule sync
+    subdate = submodule update --init --recursive
+    ccc = credential-cache exit
+    clo = clone --recursive
 [color]
     ui = auto
     branch = always
@@ -27,6 +34,7 @@
     tool = meld
 [core]
     editor = vim
+    askpass = 
 [push]
     default = current
 [status]

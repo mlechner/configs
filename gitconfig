@@ -17,6 +17,7 @@
     fa = fetch --all
     rv = remote -v
     bv = branch -ravv
+    bvd = branch -ravv --no-merged
     bc = branch -r --contains
     bcv = branch -ravv --contains
     ftech = fetch

@@ -47,3 +47,4 @@
     helper = cache
 [mergetool]
     keepBackup = false
+
